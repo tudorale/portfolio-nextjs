@@ -22,7 +22,8 @@
 .navbar ul li{
     margin: 15px;
     transition: all 200ms linear;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    font-weight: 300;
 }
 
 .navbar ul li:hover{

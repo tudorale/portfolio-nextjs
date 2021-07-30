@@ -4,3 +4,105 @@
     height: 100vh;
     background: var(--main-color);
 }
+
+.content{
+    display: flex;
+    position: relative;
+    top: 10vh;
+    left: 50px;
+    flex-direction: row;
+    width: 90%;
+}
+
+.left{
+    color: white;
+}
+
+.left h1{
+    font-size: 3rem;
+    width: 550px;
+    font-weight: 500;
+    
+}
+
+.left button{
+    position: relative;
+    top: 35px;
+    padding: 7px 25px;
+    padding-right: 30px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.left button:hover{
+    background-color: var(--secondary-hover);
+}
+
+.left button svg{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    left: -7px;
+    top: 2px;
+    fill: white;
+}
+
+.left button span{
+    position: relative;
+    left: 10px;
+    top: -6px;
+    font-size: 1.2rem;
+}
+
+.scroll {
+    display: block;
+    margin-top: 80px;
+}
+
+.circle {
+    animation: upDown 800ms infinite alternate-reverse;
+}
+
+@keyframes upDown {
+    0% {
+      -webkit-transform: translate(262px, 798px);
+      transform: translate(262px, 798px);
+    }
+    100% {
+      -webkit-transform: translate(262px, 830px);
+      transform: translate(262px, 830px);
+    }
+}
+
+.keyboard {
+    width: 630px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    margin-right: -20px;
+    transform: rotate(15deg);
+}
+
+.keyAnimation {
+    cursor: pointer;
+    animation: upDownSlow 1000ms infinite alternate-reverse;
+}
+
+.key {
+    transition: all 300ms linear;
+}
+
+@keyframes upDownSlow {
+    0% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
