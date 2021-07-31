@@ -40,7 +40,7 @@ function Work() {
             <div className={styles.image}>
             </div>
 
-            <h1 className={styles.number}>01</h1>
+            <h1 className={styles.number}>00</h1>
           </div>
         </div>
     )

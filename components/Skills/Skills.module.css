@@ -61,7 +61,7 @@
 .number{
     position: absolute;
     right: -240px;
-    bottom: 45px;
+    bottom: 40px;
     font-size: 8.5rem;
     font-family: "Dancing Script";
     color: var(--secondary-color);

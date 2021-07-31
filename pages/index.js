@@ -31,6 +31,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Tudor Alexandru - An enthusiastic Front-End Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <meta name="description" content="Personal portfolio where you can find more about me and my journey as a Front-End Developer" />
         <meta name="author" content="Tudor Alexandru" />
         <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, website development" />
