@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Link from "next/link"
 import Computer from "../public/computer.png"
 import Work from '../components/Projects/Work'
+import Skills from '../components/Skills/Skills'
 
 export default function Home() {
 
@@ -381,6 +382,8 @@ export default function Home() {
 
       <div className={styles.wrapper}>
         <Work/>
+
+        <Skills/>
       </div>
      </div>
   )

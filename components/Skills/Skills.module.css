@@ -1,0 +1,69 @@
+.skills{
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+
+.header{
+    color: var(--main-color);
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+}
+
+.additionalWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background: var(--main-color);
+}
+
+.banner .sectionOne, .banner .sectionTwo{
+    width: 600px;
+    color: black;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    top: 40px;
+    padding-bottom: 100px;
+}
+
+
+.banner .sectionOne h1, .banner .sectionTwo .title{
+    font-size: 1.55rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.banner .sectionOne p, .banner .sectionTwo p{
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.banner .sectionTwo{
+    width: 800px;
+    color: white;
+    position: relative;
+    padding: 30px;
+    background: var(--main-color);
+    top: -35px;
+}
+
+.number{
+    position: absolute;
+    right: -240px;
+    bottom: 45px;
+    font-size: 8.5rem;
+    font-family: "Dancing Script";
+    color: var(--secondary-color);
+    z-index: 25;
+}
