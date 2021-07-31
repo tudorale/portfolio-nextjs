@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category{
+    display: grid;
+    position: relative;
+    top: 20px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+}
+
+
+.category .info{
+    padding: 20px;
+}
+
+.category .info h1{
+    color: var(--main-color);
+    font-size: 2.7rem;
+}
+
+.category .image {
+    background-image: url("../../public/opensource/typinghub.jpg");
+    width: 605px;
+    height: 305px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-size: cover;
+    animation: upDownSlow 1000ms infinite alternate-reverse;
+}
+
+@keyframes upDownSlow {
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.category .info button{
+    position: relative;
+    top: 35px;
+    padding: 5px 20px;
+    padding-right: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.category .info button:hover{
+    background-color: var(--secondary-hover);
+}
+
+.category .info button svg{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    left: -5px;
+    top: 2px;
+    fill: white;
+}
+
+.category .info button span{
+    position: relative;
+    left: 12px;
+    top: -6px;
+    font-size: 1.2rem;
+}
+
+.category .info p{
+    position: relative;
+    top: 70px;
+    color: rgb(77, 77, 77);
+    font-size: 1.1rem;
+}
+
+.category .info a{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.number{
+    position: absolute;
+    right: -50px;
+    font-size: 8.5rem;
+    bottom: -70px;
+    font-family: "Dancing Script";
+    color: var(--main-color);
+}
+
+.secondCategory{
+    position: relative;
+    top: 100px;
+}
+
+.secondCategory .image{
+    background-image: url("../../public/casestudies/aibloc.jpg");
+    width: 600px;
+    height: 305px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-size: cover;
+    animation: upDownSlow 1000ms infinite alternate-reverse;
+}

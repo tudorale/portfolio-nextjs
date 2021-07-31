@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Nav/Navbar'
 import styles from '../styles/Home.module.css'
 import Link from "next/link"
 import Computer from "../public/computer.png"
+import Work from '../components/Projects/Work'
 
 export default function Home() {
 
@@ -378,6 +379,9 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.wrapper}>
+        <Work/>
+      </div>
      </div>
   )
 }
