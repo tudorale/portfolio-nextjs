@@ -16,7 +16,7 @@ function Work() {
                 </button>
               </Link>
 
-              <p>Also, you can find them explaind in detail on my <Link href="https://github.com/tudorale">GitHub</Link></p>
+              <p>Also, you can find them explaind in detail on my <Link href="https://github.com/tudorale" passHref><a target="_blank">Github</a></Link></p>
             </div>
 
             <div className={styles.image}>
