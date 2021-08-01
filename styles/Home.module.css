@@ -18,11 +18,10 @@
     color: white;
 }
 
-.left h1{
+.left .bigText{
     font-size: 3rem;
     width: 550px;
     font-weight: 500;
-    
 }
 
 .left button{
@@ -111,5 +110,9 @@
 .wrapper{
     position: relative;
     top: 50px;
+}
+
+.imageWrapper{
+
 }
 

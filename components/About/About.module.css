@@ -17,6 +17,13 @@
     font-size: 1.2rem;
 }
 
+.about .sectionOne .imageWrapper{
+    display: inline;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
 
 .aboutBanner{
     width: 100%;
@@ -33,18 +40,16 @@
     color: white;
 }
 
-.about .sectionOne .additionalWrapper{
-    display: inline;
+
+.about .aboutBanner .wrapper .additionalWrapper{
+    width: 100%;
     position: relative;
-    top: 2px;
-    left: 6px;
 }
 
-
-.number{
+.about .aboutBanner .wrapper .additionalWrapper .number{
     position: absolute;
-    right: 60px;
-    bottom: -110px;
+    right: -50px;
+    bottom: -130px;
     font-size: 8.5rem;
     font-family: "Dancing Script";
     color: var(--secondary-color);

@@ -19,13 +19,13 @@
     margin: 0 auto;
 }
 
-.banner{
+.skills .banner{
     width: 100%;
     height: 300px;
     background: var(--main-color);
 }
 
-.banner .sectionOne, .banner .sectionTwo{
+.skills .banner .sectionOne, .skills .banner .sectionTwo{
     width: 600px;
     color: black;
     padding: 20px;
@@ -38,18 +38,18 @@
 }
 
 
-.banner .sectionOne h1, .banner .sectionTwo .title{
+.skills .banner .sectionOne h1, .skills .banner .sectionTwo .title{
     font-size: 1.55rem;
     font-weight: 500;
     margin-bottom: 20px;
 }
-.banner .sectionOne p, .banner .sectionTwo p{
+.skills .banner .sectionOne p, .skills .banner .sectionTwo p{
     font-size: 1.15rem;
     font-weight: 400;
     line-height: 25px;
 }
 
-.banner .sectionTwo{
+.skills .banner .sectionTwo{
     width: 800px;
     color: white;
     position: relative;
@@ -58,7 +58,7 @@
     top: -35px;
 }
 
-.number{
+.skills .banner .additionalWrapper .sectionTwo .number{
     position: absolute;
     right: -210px;
     bottom: 40px;
