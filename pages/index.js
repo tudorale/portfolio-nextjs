@@ -6,6 +6,7 @@ import Link from "next/link"
 import Computer from "../public/computer.png"
 import Work from '../components/Projects/Work'
 import Skills from '../components/Skills/Skills'
+import About from '../components/About/About'
 
 export default function Home() {
 
@@ -385,6 +386,8 @@ export default function Home() {
         <Work/>
 
         <Skills/>
+
+        <About />
       </div>
      </div>
   )
