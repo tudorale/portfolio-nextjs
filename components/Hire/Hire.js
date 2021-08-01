@@ -95,7 +95,7 @@ function Hire() {
       };
 
     return (
-        <div className={styles.hire}>
+        <div className={styles.hire} id="contact">
            <h1 className={styles.header}>Hire Me</h1>
            <div className={styles.banner}>
                 <div className={styles.content}>

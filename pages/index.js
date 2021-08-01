@@ -8,6 +8,7 @@ import Work from '../components/Projects/Work'
 import Skills from '../components/Skills/Skills'
 import About from '../components/About/About'
 import Hire from "../components/Hire/Hire";
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
 
@@ -391,6 +392,8 @@ export default function Home() {
         <About />
 
         <Hire />
+
+        <Footer />
       </div>
      </div>
   )
