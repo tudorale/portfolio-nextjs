@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from "./Navbar.module.css";
 
 function Navbar() {
+    
     return (
         <div className={styles.navbar}>
             <h1><Link href="/">Tudor Alexandru</Link></h1>

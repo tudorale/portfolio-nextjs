@@ -38,8 +38,7 @@ export default function Home() {
         <meta name="description" content="Personal portfolio where you can find more about me and my journey as a Front-End Developer" />
         <meta name="author" content="Tudor Alexandru" />
         <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, website development" />
-
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <div className={styles.hero}>
