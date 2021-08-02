@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.hero}>
-        <Navbar/>
+        <Navbar type="main"/>
 
         <div className={styles.content}>
           <div className={styles.left}>
