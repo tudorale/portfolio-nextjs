@@ -1,6 +1,6 @@
 .openSource .hero{
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     z-index: -1;
     height: 100vh;
@@ -43,4 +43,17 @@
       -webkit-transform: translate(262px, 830px);
       transform: translate(262px, 830px);
     }
+}
+
+.openSourceContent{
+    position: relative;
+    top: 20px;
+    width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.sourceFooter{
+    position: relative;
+    top: -720px;
 }
