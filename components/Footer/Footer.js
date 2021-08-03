@@ -5,7 +5,7 @@ import Image from "next/image";
 function Footer() {
     return (
         <div className={styles.footer}>
-            <h1 className={styles.logo}>Tudor Alexandru</h1>
+            <Link href="/" passHref><h1 className={styles.logo}>Tudor <span className={styles.lastName}>Alexandru</span></h1></Link>
             <div className={styles.icons}>
                 <Link href="https://github.com/tudorale" passHref>
                     <a target="_blank">

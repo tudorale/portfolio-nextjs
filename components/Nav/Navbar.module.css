@@ -10,7 +10,12 @@
     font-size: 1.3rem;
     font-weight: 400;
     margin: 15px;
+    cursor: pointer;
     margin-left: 25px;
+}
+
+.lastName{
+    font-weight: 300;
 }
 
 .navbar ul{

@@ -125,7 +125,9 @@ function Project({title, description, maintained, application, extension, landin
       </div>
 
       <div className={styles.partTwo}>
-        <Image src={image} alt="" className={styles.projectImage} />
+        <Link href={website} passHref>
+          <Image src={image} alt="" className={styles.projectImage} />
+        </Link>
       </div>
     </div>
   );

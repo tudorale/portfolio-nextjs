@@ -35,7 +35,9 @@ function Project({title, description, link, image, repo}) {
       </div>
 
       <div className={styles.partTwo}>
-        <Image src={image} alt="" className={styles.projectImage} />
+        <Link href={link} passHref>
+            <Image src={image} alt="" className={styles.projectImage} />
+        </Link>
       </div>
     </div>
   );

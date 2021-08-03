@@ -10,7 +10,12 @@
 
 .logo{
     font-weight: 400;
+    cursor: pointer;
     font-size: 1.5rem;
+}
+
+.lastName{
+    font-weight: 300;
 }
 
 .copyright{

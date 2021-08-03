@@ -5,7 +5,7 @@ function Navbar({type}) {
     
     return (
         <div className={styles.navbar}>
-            <h1><Link href="/">Tudor Alexandru</Link></h1>
+            <Link href="/" passHref><h1>Tudor <span className={styles.lastName}>Alexandru</span></h1></Link>
             {type === "main" &&
                 <ul>
                     <li><Link href="/open-source">Open Source Projects</Link></li>

@@ -94,6 +94,7 @@
 
 .partTwo img {
     width: 500px;
+    cursor: pointer;
     border-radius: 10px;
     transition: all 300ms linear;
 }
