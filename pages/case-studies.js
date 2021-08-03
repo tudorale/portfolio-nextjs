@@ -1,11 +1,12 @@
 import styles from "../styles/CaseStudies.module.css";
 import Nav from "../components/Nav/Navbar";
 import Head from "next/head";
+import Study from "../components/CaseStudy/Study";
+import AiBloc from "../public/casestudies/aibloc.jpg";
 
 function casestudies() {
     return (
-        <div>
-             <>
+        <>
             <Nav type="case-studies" />
             <Head>
                 <title>Tudor Alexandru - Case Studies</title>
@@ -13,7 +14,7 @@ function casestudies() {
             <div className={styles.caseStudies}>
                 <div className={styles.hero}>
                     <h1>Tudor Alexandru&apos;s case studies</h1>
-                    <p>Case studies about projects that I made for real clients, every client gave their permission for showing the case studies here.</p>
+                    <p>Case studies about projects that I made for real clients, every client gave their permission for showing the case study here.</p>
                     <svg
                         className={styles.scroll}
                         width="40"
@@ -50,8 +51,20 @@ function casestudies() {
                         </g>
                         </svg>
                 </div>
+
+                <div className={styles.caseStudiesContent}>
+                    <div data-aos="fade-up">
+                        <Study
+                            image={AiBloc}
+                            link="/case-studies/aibloc"
+                            repo="https://github.com/tudorale/aibloc"
+                            title="Ai Bloc"
+                            description='Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.'
+                        />
+                    </div>
+                </div>
             </div>
-    
+            
         </>
     )
 }

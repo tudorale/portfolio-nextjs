@@ -1,0 +1,56 @@
+.caseStudies .hero{
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    background: var(--main-color);
+    text-align: center;
+    color: white;
+}
+
+.caseStudies .hero h1{
+    position: relative;
+    top: 180px;
+    font-size: 2.4rem;
+}
+
+.caseStudies .hero p{
+    position: relative;
+    top: 200px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.caseStudies .hero p a{
+    text-decoration: underline;
+}
+
+.caseStudies .hero .scroll{
+    position: relative;
+    top: 400px;
+}
+
+.circle {
+    animation: upDown 800ms infinite alternate-reverse;
+}
+
+@keyframes upDown {
+    0% {
+      -webkit-transform: translate(262px, 798px);
+      transform: translate(262px, 798px);
+    }
+    100% {
+      -webkit-transform: translate(262px, 830px);
+      transform: translate(262px, 830px);
+    }
+}
+
+.caseStudiesContent{
+    position: relative;
+    top: 20px;
+    width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
