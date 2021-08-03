@@ -8,7 +8,7 @@
 .content{
     display: flex;
     position: relative;
-    top: 10vh;
+    top: 150px;
     left: 50px;
     flex-direction: row;
     width: 90%;
