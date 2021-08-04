@@ -1,8 +1,8 @@
-import styles from "../styles/CaseStudies.module.css";
-import Nav from "../components/Nav/Navbar";
+import styles from "../../styles/CaseStudies.module.css";
+import Nav from "../../components/Nav/Navbar";
 import Head from "next/head";
-import Study from "../components/CaseStudy/Study";
-import AiBloc from "../public/casestudies/aibloc.jpg";
+import Study from "../../components/CaseStudy/Study";
+import AiBloc from "../../public/casestudies/aibloc.jpg";
 
 function casestudies() {
     return (
