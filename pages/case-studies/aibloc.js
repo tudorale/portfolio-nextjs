@@ -1,9 +1,15 @@
 import styles from "../../styles/casestudies/Aibloc.module.css";
 import Nav from "../../components/Nav/Navbar";
 import Head from "next/head";
-import AiBloc from "../../public/casestudies/aiblocTwo.png";
+import AiBloc from "../../public/casestudies/aibloc/aiblocTwo.png";
 import Link from "next/link";
 import Image from "next/image";
+import Image2 from "../../public/casestudies/aibloc/image2.png";
+import Image3 from "../../public/casestudies/aibloc/image3.png";
+import Image4 from "../../public/casestudies/aibloc/image4.png";
+import Image5 from "../../public/casestudies/aibloc/image5.png";
+import Image6 from "../../public/casestudies/aibloc/image6.png";
+import Footer from "../../components/Footer/Footer";
 
 function aibloc() {
     return (
@@ -68,6 +74,83 @@ function aibloc() {
                     <Image alt="ai bloc landing page" width="600" height="320" src={AiBloc}/>
                </div>
            </div>
+
+           <div className={styles.studyContent}>
+               <h1><span>{"//"}</span> SUMMERY</h1>
+               <p><span>Ai Bloc</span> is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.
+                <br />
+                <br/>
+                At first, I started designing a wireframe in Figma, the client was happy about it and then we went to the coding process. I used mainly React JS as the client was fine with it, I used also different libraries such as GSAP, AOS, Typed.js for animations. The illustrations from the landing page were edited in Adobe Photoshop to match the color scheme.</p>
+           </div>
+
+           <div className={styles.banner}>
+               <div className={styles.bannerContent}>
+                    <div className={styles.bannerImage}>
+                        <Image alt="ai bloc landing page" width="520" height="270" src={AiBloc}/>
+                    </div>
+                    <div className={styles.bannerInfo}>
+                        <h1>Hero section, with an interactiv demo from the product.</h1>
+                    </div>
+               </div>
+           </div>
+
+           <div className={styles.studyContent} style={{marginTop: "100px"}}>
+               <h1><span>{"//"}</span> MY ROLE</h1>
+               <p>As the recruiter for this one time project wanted a Front-End Developer, with experience in React JS, I handled the coding of the landing page but also the design of it.
+                <br />
+                <br/>
+                For the coding process I used <span>React JS</span> with the following libraries: <span>GSAP</span>, <span>AOS</span>, <span>React Slick</span> and <span>Typed JS</span>.
+                <br/>
+                To design the wireframe and a mockup for the landing page I used Figma.</p>
+           </div>
+
+           <div className={styles.banner}>
+               <div className={styles.bannerContent}>
+                    <div className={styles.bannerImage}>
+                        <Image alt="ai bloc landing page" width="520" height="280" src={Image2}/>
+                    </div>
+                    <div className={styles.bannerInfo}>
+                        <h1>Section two, about the first feature, along with a carousel with videos.</h1>
+                    </div>
+               </div>
+           </div>
+
+           <div className={styles.studyContent} style={{marginTop: "100px"}}>
+               <h1><span>{"//"}</span> WALKTHROUGH</h1>
+               <p>
+                The project started with a wireframe made in Figma, after the client review it, I started adding more features, illustrations and icons to make the design look better. After the mock up for the landing page was done I started the coding process.
+                <br/>
+                <br/>
+                As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between <span>48-72 hours of coding</span>, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.
+                <br/>
+                <br/>
+                The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below.
+               </p>
+            
+           </div>
+
+            <div className={styles.banner}>
+               <div className={styles.bannerContent}>
+                    <div className={styles.bannerImage}>
+                        <Image alt="ai bloc landing page" width="520" height="280" src={Image3}/>
+                    </div>
+                    <div className={styles.bannerImage}>
+                        <Image alt="ai bloc landing page" width="520" height="280" src={Image4}/>
+                    </div>
+                    <div className={styles.bannerImage}>
+                        <Image alt="ai bloc landing page" width="520" height="280" src={Image5}/>
+                    </div>
+                    <div className={styles.bannerImage}>
+                        <Image alt="ai bloc landing page" width="520" height="280" src={Image6}/>
+                    </div>
+               </div>
+           </div>
+
+
+            <div className={styles.studyFooter}>
+                <Footer />
+            </div>
+          
         </>
     )
 }

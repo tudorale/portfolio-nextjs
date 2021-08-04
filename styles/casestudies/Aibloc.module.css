@@ -1,7 +1,7 @@
 .hero{
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
@@ -14,6 +14,7 @@
     top: 150px;
     left: 50px;
     width: fit-content;
+    height: fit-content;
 }
 .hero .info h1{
     color: white;
@@ -94,4 +95,57 @@
 
 .image img{
     border-radius: 10px;
+}
+
+.studyContent{
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    top: 70px;
+}
+
+.studyContent h1{
+    color: #d1b5ff;
+    font-size: 2.1rem;
+}
+
+.studyContent p{
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    
+}
+
+.studyContent p span{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.banner{
+    width: 100%;
+    padding: 30px;
+    background: var(--main-color);
+    position: relative;
+    top: 100px;
+}
+
+.bannerContent{
+    display: grid;
+    text-align: center;
+    color: white;
+    width: 1080px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 70px;
+}
+
+.bannerImage img{
+    border-radius: 10px;
+}
+
+
+.studyFooter{
+    position: relative;
+    top: -600px;
 }
