@@ -1,21 +1,33 @@
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* */
+    background: black;
+    opacity: 0; /* */
+    transition: all 300ms linear;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    z-index: 999;
+    z-index: 998;
 }
 
 .navbar h1{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin: 15px;
     cursor: pointer;
     margin-left: 25px;
 }
 
-.lastName{
+.navbar .lastName{
     font-weight: 300;
 }
 
@@ -28,6 +40,7 @@
 
 .navbar ul li{
     margin: 15px;
+    margin-top: 18px;
     transition: all 200ms linear;
     font-size: 1.15rem;
     font-weight: 300;
@@ -35,4 +48,88 @@
 
 .navbar ul li:hover{
     font-size: 1.25rem;
+}
+
+.navbar .hamburger{
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 18px;
+    display: none;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.navbar .hamburger .line{
+    width: 25px;
+    height: 2px;
+    background: white;
+}
+
+.mobileNavbar{
+    flex-direction: column;
+    width: 270px;
+    height: 100%;
+    position: fixed;
+    left: -500px;
+    top: 0;
+    z-index: 1001;
+    transition: all 300ms linear;
+    background: white;
+}
+
+.mobileNavbar h1{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 15px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.mobileNavbar .lastName{
+    font-weight: 300;
+}
+
+.mobileNavbar ul{
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position:relative;
+    top: 50px;
+    justify-content: center;
+}
+
+.mobileNavbar ul li{
+    margin: 15px;
+    margin-top: 18px;
+    margin-left: 0px;
+    transition: all 200ms linear;
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+.mobileNavbar ul li:hover{
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 700px){
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar .hamburger{
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .mobileNavbar{
+        width: 230px;
+    }
 }

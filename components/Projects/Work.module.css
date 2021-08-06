@@ -109,10 +109,98 @@
 
 .secondCategory .image{
     background-image: url("../../public/casestudies/aibloc.jpg");
-    width: 600px;
-    height: 305px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-size: cover;
-    animation: upDownSlow 1000ms infinite alternate-reverse;
 }
+
+
+
+@media only screen and (max-width: 1270px){
+    .work .category .number{
+        position: absolute;
+        right: unset;
+        left: 0px;
+        bottom: -160px;
+    }
+  }
+
+  @media only screen and (max-width: 1150px){
+    .work .category .number{
+        display: none;
+    }
+
+    .category{
+        display: grid;
+        position: relative;
+        top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    .category .info{
+        padding-left: 0px;
+    }
+
+    .category .info p{
+        top: -30px;
+    }
+
+    .category .info button{
+        top: 60px;
+    }
+
+    .secondCategory{
+        position: relative;
+        top: 100px;
+    }
+    
+    .category .image {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+  }
+
+
+  @media only screen and (max-width: 620px){
+    .category .image {
+        width: 405px;
+        height: 205px;
+    }
+  }
+
+  
+  @media only screen and (max-width: 435px){
+    .category .image {
+        display: none;
+    }
+
+    .category{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+    }
+
+    .category .info{
+        padding: 25px;
+    }
+
+    .category .info p{
+        top: -30px;
+    }
+
+    .category .info button{
+        top: 80px;
+    }
+
+    
+    .category .info h1{
+        font-size: 2.3rem;
+    }
+
+  }
+
+  

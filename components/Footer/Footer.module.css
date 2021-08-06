@@ -1,6 +1,6 @@
 .footer{
     position: absolute;
-    bottom: -1100px;
+    bottom: -1150px;
     width: 100%;
     height: 250px;
     background: var(--main-color);
@@ -22,6 +22,7 @@
     font-size: 1.1rem;
     position: absolute;
     bottom: 7px;
+    padding-right: 15px;
 }
 
 .copyright .imageWrapper{
@@ -63,4 +64,17 @@
 
 .links a:hover{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 450px){
+    .footer{
+        bottom: -1030px;
+        height: 380px;
+    }
+
+    .links{
+        right: unset;
+        left: 20px;
+        top: 160px;
+    }
 }

@@ -1,6 +1,6 @@
 .about{
     position: relative;
-    top: 470px;
+    top:510px;
     text-align: start;
 }
 
@@ -49,9 +49,43 @@
 .about .aboutBanner .wrapper .additionalWrapper .number{
     position: absolute;
     right: -50px;
-    bottom: -130px;
+    bottom: -170px;
     font-size: 8.5rem;
     font-family: "Dancing Script";
     color: var(--secondary-color);
     z-index: 2;
+}
+
+@media only screen and (max-width: 1270px){
+    .about .aboutBanner .wrapper .additionalWrapper .number{
+        position: absolute;
+        right: unset;
+        left: -15px;
+        bottom: -170px;
+    }
+  }
+  
+  @media only screen and (max-width: 1150px){
+    .about .aboutBanner .wrapper .additionalWrapper .number{
+        display: none;
+    }
+
+    
+    .about .sectionOne{
+        padding: 0px 15px;
+    }
+
+  }
+
+  @media only screen and (max-width: 690px){
+    .about{
+        top:570px;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+    .about{
+        top: 380px;
+    }
+
 }

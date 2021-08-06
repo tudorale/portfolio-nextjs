@@ -1,6 +1,6 @@
 .hire{
     position: relative;
-    top: 600px;
+    top: 670px;
     text-align: start;
 }
 
@@ -189,4 +189,81 @@
     color: var(--secondary-color);
     z-index: 25;
     letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 1270px){
+    .hire .banner .content .number{
+        position: absolute;
+        right: unset;
+        left: -150px;
+        bottom: -50px;
+        
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .hire .banner .content .number{
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .hire .banner .content{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 773px){
+    .hire .banner{
+        height: 520px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .form{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "name"
+            "email"
+            "message"
+            "btn"
+        ;
+    }
+
+    .hire .banner{
+        height:580px;
+    }
+
+    .hire .banner .content{
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .hire .banner{
+        height: 600px;
+    }
+    .hire .banner .content{
+        height: 640px;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+    .hire{
+        top: 500px;
+    }   
+}
+
+@media only screen and (max-width: 344px){
+    .hire .banner{
+        height: 640px;
+    }
+    .hire .banner .content{
+        height: 660px;
+        padding: 20px;
+    }
 }

@@ -71,7 +71,7 @@ function aibloc() {
                </div>
 
                <div className={styles.image}>
-                    <Image alt="ai bloc landing page" width="600" height="320" src={AiBloc}/>
+                    <Image alt="ai bloc landing page" width="650" height="310" src={AiBloc}/>
                </div>
            </div>
 
@@ -86,7 +86,7 @@ function aibloc() {
            <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage}>
-                        <Image alt="ai bloc landing page" width="520" height="270" src={AiBloc}/>
+                        <Image alt="ai bloc landing page" width="750" height="362" src={AiBloc}/>
                     </div>
                     <div className={styles.bannerInfo}>
                         <h1>Hero section, with an interactiv demo from the product.</h1>
@@ -107,7 +107,7 @@ function aibloc() {
            <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage}>
-                        <Image alt="ai bloc landing page" width="520" height="280" src={Image2}/>
+                        <Image alt="ai bloc landing page" width="750" height="362" src={Image2}/>
                     </div>
                     <div className={styles.bannerInfo}>
                         <h1>Section two, about the first feature, along with a carousel with videos.</h1>
@@ -121,7 +121,7 @@ function aibloc() {
                 The project started with a wireframe made in Figma, after the client review it, I started adding more features, illustrations and icons to make the design look better. After the mock up for the landing page was done I started the coding process.
                 <br/>
                 <br/>
-                As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between <span>48-72 hours of coding</span>, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.
+                As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between <span>10-24 hours of coding</span>, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.
                 <br/>
                 <br/>
                 The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below.
@@ -132,16 +132,16 @@ function aibloc() {
             <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage}>
-                        <Image alt="ai bloc landing page" width="520" height="280" src={Image3}/>
+                        <Image alt="ai bloc landing page" width="750" height="362" src={Image3}/>
                     </div>
                     <div className={styles.bannerImage}>
-                        <Image alt="ai bloc landing page" width="520" height="280" src={Image4}/>
+                        <Image alt="ai bloc landing page" width="750" height="362" src={Image4}/>
                     </div>
                     <div className={styles.bannerImage}>
-                        <Image alt="ai bloc landing page" width="520" height="280" src={Image5}/>
+                        <Image alt="ai bloc landing page" width="750" height="362" src={Image5}/>
                     </div>
                     <div className={styles.bannerImage}>
-                        <Image alt="ai bloc landing page" width="520" height="280" src={Image6}/>
+                        <Image alt="ai bloc landing page" width="750" height="362" src={Image6}/>
                     </div>
                </div>
            </div>

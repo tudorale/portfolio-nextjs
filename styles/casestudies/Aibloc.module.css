@@ -134,7 +134,7 @@
     color: white;
     width: 1080px;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
     grid-gap: 70px;
@@ -148,4 +148,8 @@
 .studyFooter{
     position: relative;
     top: -600px;
+}
+
+.bannerInfo{
+    width: 450px;
 }
