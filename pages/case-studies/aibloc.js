@@ -16,6 +16,11 @@ function aibloc() {
         <>
             <Head>
                 <title>Tudor Alexandru - Ai Bloc</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <meta name="description" content="Case study about Ai Bloc, a non-code platform where you can build programs" />
+                <meta name="author" content="Tudor Alexandru" />
+                <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, ai bloc" />
+                <link rel="icon" href="../logo.png" />
             </Head>
            <Nav type="study"/>
            <div className={styles.hero}>

@@ -18,6 +18,11 @@ function opensource() {
             <Nav type="open-source" />
             <Head>
                 <title>Tudor Alexandru - Open Source Projects</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <meta name="description" content="My open source projects that I worked in my coding journey as a developer" />
+                <meta name="author" content="Tudor Alexandru" />
+                <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, open source projects" />
+                <link rel="icon" href="../logo.png" />
             </Head>
             <div className={styles.openSource}>
                 <div className={styles.hero}>
