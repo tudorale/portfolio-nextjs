@@ -3,6 +3,7 @@ import Nav from "../../components/Nav/Navbar";
 import Head from "next/head";
 import Study from "../../components/CaseStudy/Study";
 import AiBloc from "../../public/casestudies/aibloc.jpg";
+import Footer from "../../components/Footer/Footer";
 
 function casestudies() {
     return (
@@ -65,6 +66,9 @@ function casestudies() {
                 </div>
             </div>
             
+            <div className={styles.caseStudiesFooter}>
+                <Footer />
+            </div>
         </>
     )
 }

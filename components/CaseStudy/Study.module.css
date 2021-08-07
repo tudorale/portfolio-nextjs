@@ -1,6 +1,6 @@
 .project {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 30px;
     margin-top: 70px;
@@ -48,6 +48,10 @@
     top: 3px;
 }
 
+.specialButton{
+    margin-left: 20px;
+}
+
 .projectButton a button span{
     position: relative;
     left: 10px;
@@ -68,4 +72,43 @@
     cursor: pointer;
     border-radius: 10px;
     transition: all 300ms linear;
+}
+
+@media only screen and (max-width: 1030px){
+    .project {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-areas: 
+        "one"
+        "two"
+        ;
+    }
+
+    .projectButton {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .partTwo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .projectButton {
+        flex-direction: column;
+    }
+
+    .specialButton{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    
+    
 }

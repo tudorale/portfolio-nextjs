@@ -15,6 +15,7 @@ function Navbar({type}) {
                 mobileNavbar.style.left = "0px";
             }
             if(overlay){
+                overlay.style.visibility = "visible";
                 overlay.style.zIndex = "1000";
                 overlay.style.opacity = "0.35";
             }
@@ -23,6 +24,7 @@ function Navbar({type}) {
                 mobileNavbar.style.left = "-500px";
             }
             if(overlay){
+                overlay.style.visibility = "hidden";
                 overlay.style.zIndex = "-1";
                 overlay.style.opacity = "0";
             }

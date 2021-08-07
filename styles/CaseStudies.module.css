@@ -3,7 +3,7 @@
     position: relative;
     top: 0;
     z-index: -1;
-    height: 100vh;
+    height: 700px;
     background: var(--main-color);
     text-align: center;
     color: white;
@@ -29,11 +29,16 @@
 
 .caseStudies .hero .scroll{
     position: relative;
-    top: 400px;
+    top: 350px;
 }
 
 .circle {
     animation: upDown 800ms infinite alternate-reverse;
+}
+
+.caseStudiesFooter{
+    position: relative;
+    top: -750px;
 }
 
 @keyframes upDown {
@@ -53,4 +58,40 @@
     width: 1140px;
     margin: 0 auto;
     padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px){
+    .caseStudiesContent{
+        width: 100%;
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 820px){
+    .caseStudies .hero p{
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .caseStudies .hero h1{
+        padding: 0 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    .caseStudies .hero h1{
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 450px){
+    .caseStudiesFooter{
+        position: relative;
+        top: -520px;
+    }
+    
 }
