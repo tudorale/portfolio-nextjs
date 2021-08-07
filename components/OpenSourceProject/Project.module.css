@@ -72,13 +72,14 @@
 }
 
 .projectTags {
-    margin-top: 15px;
     display: flex;
+    margin-top: 10px;
     flex-wrap: wrap;
     margin-left: -20px;
 }
 .tag{
     margin-left: 20px;
+    margin-top: 10px;
 }
 .tag img{
     height: 25px;

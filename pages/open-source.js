@@ -22,7 +22,7 @@ function opensource() {
             <div className={styles.openSource}>
                 <div className={styles.hero}>
                     <h1>Tudor Alexandru&apos;s open source projects</h1>
-                    <p>You can also see them in detail on my <Link href="https://github.com/tudorale"><a target="_blank">Github</a></Link></p>
+                    <p>You can also see them in detail on my <Link href="https://github.com/tudorale" passHref><a target="_blank">Github</a></Link></p>
                     <svg
                         className={styles.scroll}
                         width="40"

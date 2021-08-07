@@ -11,6 +11,11 @@ function casestudies() {
             <Nav type="case-studies" />
             <Head>
                 <title>Tudor Alexandru - Case Studies</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <meta name="description" content="Case studies about my work for real clients" />
+                <meta name="author" content="Tudor Alexandru" />
+                <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, case studies" />
+                <link rel="icon" href="../logo.png" />
             </Head>
             <div className={styles.caseStudies}>
                 <div className={styles.hero}>

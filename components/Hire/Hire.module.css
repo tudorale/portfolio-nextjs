@@ -258,6 +258,15 @@
     }   
 }
 
+@media only screen and (max-width: 400px){
+    .hire .banner{
+        padding: 10px;
+    }
+    .hire .banner .content{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 344px){
     .hire .banner{
         height: 640px;
