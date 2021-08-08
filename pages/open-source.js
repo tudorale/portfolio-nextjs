@@ -13,6 +13,7 @@ import Motes from "../public/opensource/motes.jpg";
 import Footer from "../components/Footer/Footer"
 
 function opensource() {
+
     return (
         <>
             <Nav type="open-source" />
