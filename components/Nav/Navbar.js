@@ -1,9 +1,24 @@
 import Link from "next/link"
 import styles from "./Navbar.module.css";
+import {Power3, gsap} from "gsap";
+import React from "react";
 
 function Navbar({type}) {
 
     let status = false;
+    let navbar = React.useRef();
+
+    React.useEffect(() => {
+        gsap.to(navbar.current, 0, { css: { visibility: "visible" } });
+
+        gsap.from(navbar.current,{
+            duration: 0.8,
+            opacity: 0,
+            y: -30,
+            ease: Power3.easeOut,
+            delay: 0.5,
+          });
+    }, [])
 
     const handleMobile = () => {
         status = !status;
@@ -34,7 +49,7 @@ function Navbar({type}) {
     return (
         <>
             <div className={styles.overlay} onClick={handleMobile} id="overlay"></div>
-            <div className={styles.navbar}>
+            <div className={styles.navbar} ref={navbar}>
                 <Link href="/" passHref><h1>Tudor <span className={styles.lastName}>Alexandru</span></h1></Link>
                 {type === "main" &&
                     <ul>

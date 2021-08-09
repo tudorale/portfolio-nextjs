@@ -9,6 +9,8 @@ import Skills from '../components/Skills/Skills'
 import About from '../components/About/About'
 import Hire from "../components/Hire/Hire";
 import Footer from '../components/Footer/Footer'
+import { Power3, gsap } from "gsap";
+import {useEffect, useRef} from "react";
 
 export default function Home() {
 
@@ -30,8 +32,14 @@ export default function Home() {
     
   }
 
+  let wrapper = useRef();
+
+  useEffect(() => {
+    gsap.to(wrapper.current, 0, { css: { visibility: "visible" } });
+  }, [])
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={wrapper}>
       <Head>
         <title>Tudor Alexandru - An enthusiastic Front-End Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
