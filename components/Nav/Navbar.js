@@ -9,7 +9,7 @@ function Navbar({type}) {
     let navbar = React.useRef();
 
     React.useEffect(() => {
-        gsap.to(navbar.current, 0, { css: { visibility: "visible" } });
+        gsap.set(navbar.current, { css: { visibility: "visible" } });
 
         gsap.from(navbar.current,{
             duration: 0.8,
