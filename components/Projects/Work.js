@@ -1,12 +1,20 @@
 import React from 'react'
 import Link from "next/link"
 import styles from "./Work.module.css";
+import AOS from "aos";
 
 function Work() {
+
+    React.useEffect(() => {
+        AOS.init({
+          duration: 500
+        })
+    }, [])
+
     return (
         <div className={styles.work}>
 
-          <div className={styles.category}>
+          <div className={styles.category} data-aos="fade-left">
             <div className={styles.info}>
               <h1>See my open source projects where you can contribute</h1>
               <Link href="/open-source" passHref>
@@ -24,7 +32,7 @@ function Work() {
 
           </div>
 
-          <div className={styles.category + " " + styles.secondCategory}>
+          <div className={styles.category + " " + styles.secondCategory} data-aos="fade-right">
             <div className={styles.info}>
               <h1>See my case studies about my work for real clients</h1>
               <Link href="/case-studies" passHref>
@@ -40,7 +48,7 @@ function Work() {
             <div className={styles.image}>
             </div>
 
-            <h1 className={styles.number}>00</h1>
+            <h1 className={styles.number} data-aos="fade-up">00</h1>
           </div>
         </div>
     )

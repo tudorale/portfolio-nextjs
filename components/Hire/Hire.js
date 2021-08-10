@@ -2,7 +2,7 @@ import styles from "./Hire.module.css";
 import React from "react";
 import emailjs from "emailjs-com";
 import {configs} from "../../config";
-
+import AOS from "aos";
 function Hire() {
 
     const [buttonText, setButtonText] = React.useState("Send email")
@@ -94,14 +94,20 @@ function Hire() {
         }
       };
 
+      React.useEffect(() => {
+        AOS.init({
+          duration: 500
+        })
+    }, [])
+
     return (
         <div className={styles.hire} id="contact">
-           <h1 className={styles.header}>Hire Me</h1>
+           <h1 className={styles.header} data-aos="fade-down">Hire Me</h1>
            <div className={styles.banner}>
-                <div className={styles.content}>
+                <div className={styles.content} data-aos="fade-up">
                     <p>Do you have an idea that will make you a millionare but you need a website? Or you have a company that needs another man in the team? <b>I&apos;m here!</b></p>
                 
-                    <form className={styles.form} onSubmit={handleSubmit}>
+                    <form className={styles.form} onSubmit={handleSubmit} data-aos="fade-down">
                         <div className={styles.wrapper + " " + styles.name}>
                             <label htmlFor="name" id="nameLabel" >
                                 Your name
@@ -134,7 +140,7 @@ function Hire() {
 
                     <div id="loading" className={styles.loading}></div>
 
-                    <h1 className={styles.number}>03</h1>
+                    <h1 className={styles.number} data-aos="fade-up">03</h1>
                </div>
            </div>
         </div>
