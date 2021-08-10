@@ -24,7 +24,7 @@ function Opensource() {
 
     React.useEffect(() => {
         AOS.init({
-          duration: 500
+          duration: 600
         })
 
         gsap.set(wrapper.current, {css: { visibility: "visible" } });

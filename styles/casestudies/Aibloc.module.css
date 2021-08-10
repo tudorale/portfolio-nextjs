@@ -7,6 +7,13 @@
     grid-template-columns: 1fr 1fr;
     background: var(--main-color);
     grid-template-rows: auto;
+    visibility: hidden;
+
+
+}
+
+.additionalWrapper{
+    visibility: hidden;
 }
 
 .hero .info{

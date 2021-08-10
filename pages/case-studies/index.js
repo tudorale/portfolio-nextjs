@@ -4,8 +4,49 @@ import Head from "next/head";
 import Study from "../../components/CaseStudy/Study";
 import AiBloc from "../../public/casestudies/aibloc.jpg";
 import Footer from "../../components/Footer/Footer";
+import React from "react"
+import {Power3, gsap} from "gsap";
+import AOS from "aos";
 
-function casestudies() {
+function Casestudies() {
+
+    let header = React.useRef();
+    let subHeader = React.useRef();
+    let scroll = React.useRef();
+    let wrapper = React.useRef();
+
+    React.useEffect(() => {
+        AOS.init({
+            duration: 600
+        })
+
+        gsap.set(wrapper.current, {css: { visibility: "visible" } });
+
+        gsap.from(header.current,{
+        duration: 0.7,
+        opacity: 0,
+        y: -50,
+        ease: Power3.easeOut,
+        delay: 0.8,
+        });
+
+        gsap.from(subHeader.current,{
+        duration: 0.6,
+        opacity: 0,
+        y: 50,
+        ease: Power3.easeOut,
+        delay: 1,
+        });
+
+        gsap.from(scroll.current,{
+        duration: 0.5,
+        opacity: 0,
+        y: 70,
+        ease: Power3.easeOut,
+        delay: 1.2,
+        });
+    }, [])
+
     return (
         <>
             <Nav type="case-studies" />
@@ -17,13 +58,14 @@ function casestudies() {
                 <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, case studies" />
                 <link rel="icon" href="../logo.png" />
             </Head>
-            <div className={styles.caseStudies}>
+            <div className={styles.caseStudies} ref={wrapper}>
                 <div className={styles.hero}>
-                    <h1>Tudor Alexandru&apos;s case studies</h1>
-                    <p>Case studies about projects that I made for real clients, every client gave their permission for showing the case study here.</p>
+                    <h1 ref={header}>Tudor Alexandru&apos;s case studies</h1>
+                    <p ref={subHeader}>Case studies about projects that I made for real clients, every client gave their permission for showing the case study here.</p>
                     <svg
                         className={styles.scroll}
                         width="40"
+                        ref={scroll}
                         height="77"
                         viewBox="0 0 40 77"
                         >
@@ -78,4 +120,4 @@ function casestudies() {
     )
 }
 
-export default casestudies
+export default Casestudies
