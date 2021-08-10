@@ -11,8 +11,48 @@ import Frozo from "../public/opensource/frozo.jpg";
 import DashBoard from "../public/opensource/dashboard.jpg";
 import Motes from "../public/opensource/motes.jpg";
 import Footer from "../components/Footer/Footer"
+import React from "react";
+import AOS from "aos";
+import {Power3, gsap} from "gsap";
 
-function opensource() {
+function Opensource() {
+
+    let header = React.useRef();
+    let subHeader = React.useRef();
+    let scroll = React.useRef();
+    let wrapper = React.useRef();
+
+    React.useEffect(() => {
+        AOS.init({
+          duration: 500
+        })
+
+        gsap.set(wrapper.current, {css: { visibility: "visible" } });
+
+        gsap.from(header.current,{
+        duration: 0.7,
+        opacity: 0,
+        y: -50,
+        ease: Power3.easeOut,
+        delay: 0.8,
+        });
+
+        gsap.from(subHeader.current,{
+        duration: 0.6,
+        opacity: 0,
+        y: 50,
+        ease: Power3.easeOut,
+        delay: 1,
+        });
+
+        gsap.from(scroll.current,{
+        duration: 0.5,
+        opacity: 0,
+        y: 70,
+        ease: Power3.easeOut,
+        delay: 1.2,
+        });
+    }, [])
 
     return (
         <>
@@ -25,14 +65,15 @@ function opensource() {
                 <meta name="keywords" content="web development, front-end developer, developer, programmer, tudor alexandru, tudor, open source projects" />
                 <link rel="icon" href="../logo.png" />
             </Head>
-            <div className={styles.openSource}>
+            <div className={styles.openSource} ref={wrapper}>
                 <div className={styles.hero}>
-                    <h1>Tudor Alexandru&apos;s open source projects</h1>
-                    <p>You can also see them in detail on my <Link href="https://github.com/tudorale" passHref><a target="_blank">Github</a></Link></p>
+                    <h1 ref={header}>Tudor Alexandru&apos;s open source projects</h1>
+                    <p ref={subHeader}>You can also see them in detail on my <Link href="https://github.com/tudorale" passHref><a target="_blank">Github</a></Link></p>
                     <svg
                         className={styles.scroll}
                         width="40"
                         height="77"
+                        ref={scroll}
                         viewBox="0 0 40 77"
                         >
                         <g id="scrollCircle" transform="translate(-253 -787)">
@@ -107,7 +148,7 @@ function opensource() {
                     />
                 </div>
                 
-                <div data-aos="fade-up">
+                <div data-aos="fade-left">
                     <Project
                         image={Scorpion}
                         repo="https://github.com/tudorale/scorpion-theme"
@@ -119,7 +160,7 @@ function opensource() {
                 />
                 </div>
 
-                <div data-aos="fade-down">
+                <div data-aos="fade-up">
                     <Project
                         image={Portfolio}
                         repo="https://github.com/tudorale/portfolio"
@@ -132,7 +173,7 @@ function opensource() {
                     />
                 </div>
                 
-                <div data-aos="fade-right">
+                <div data-aos="fade-down">
                     <Project
                         image={Frozo}
                         repo="https://github.com/tudorale/frozo"
@@ -145,7 +186,7 @@ function opensource() {
                     />
                 </div>
                 
-                <div data-aos="fade-up">
+                <div data-aos="fade-right">
                     <Project
                         image={DashBoard}
                         repo="https://github.com/tudorale/dashboard"
@@ -166,4 +207,4 @@ function opensource() {
     )
 }
 
-export default opensource;
+export default Opensource;
