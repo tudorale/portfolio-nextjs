@@ -138,7 +138,7 @@ function Aibloc() {
                </div>
 
                <div className={styles.image} ref={image}>
-                    <Image alt="ai bloc landing page" width="650" height="310" src={AiBloc}/>
+                    <Image alt="ai bloc landing page" loading="eager" width="650" height="310" src={AiBloc}/>
                </div>
            </div>
 
@@ -153,7 +153,7 @@ function Aibloc() {
            <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage} data-aos="fade-right">
-                        <Image alt="ai bloc landing page" width="750" height="362" src={AiBloc}/>
+                        <Image alt="ai bloc landing page" loading="eager" width="750" height="362" src={AiBloc}/>
                     </div>
                     <div className={styles.bannerInfo} data-aos="fade-up">
                         <h1>Hero section, with an interactiv demo from the product.</h1>
@@ -174,7 +174,7 @@ function Aibloc() {
            <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage} data-aos="fade-right">
-                        <Image alt="ai bloc landing page" width="750" height="362" src={Image2}/>
+                        <Image alt="ai bloc landing page" loading="eager" width="750" height="362" src={Image2}/>
                     </div>
                     <div className={styles.bannerInfo} data-aos="fade-up">
                         <h1>Section two, about the first feature, along with a carousel with videos.</h1>
@@ -199,16 +199,16 @@ function Aibloc() {
             <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage} data-aos="fade-down">
-                        <Image alt="ai bloc landing page" width="750" height="362" src={Image3}/>
+                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={Image3}/>
                     </div>
                     <div className={styles.bannerImage} data-aos="fade-up">
-                        <Image alt="ai bloc landing page" width="750" height="362" src={Image4}/>
+                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={Image4}/>
                     </div>
                     <div className={styles.bannerImage} data-aos="fade-up">
-                        <Image alt="ai bloc landing page" width="750" height="362" src={Image5}/>
+                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={Image5}/>
                     </div>
                     <div className={styles.bannerImage} data-aos="fade-down">
-                        <Image alt="ai bloc landing page" width="750" height="362" src={Image6}/>
+                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={Image6}/>
                     </div>
                </div>
            </div>

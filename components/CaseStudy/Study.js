@@ -36,7 +36,7 @@ function Project({title, description, link, image, repo}) {
 
       <div className={styles.partTwo}>
         <Link href={link} passHref>
-            <Image src={image} alt="" className={styles.projectImage} />
+            <Image src={image} alt="" loading="eager" className={styles.projectImage} />
         </Link>
       </div>
     </div>
