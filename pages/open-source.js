@@ -148,7 +148,7 @@ function Opensource() {
                     />
                 </div>
                 
-                <div data-aos="fade-left">
+                <div data-aos="fade-up">
                     <Project
                         image={Scorpion}
                         repo="https://github.com/tudorale/scorpion-theme"
@@ -160,7 +160,7 @@ function Opensource() {
                 />
                 </div>
 
-                <div data-aos="fade-up">
+                <div data-aos="fade-down">
                     <Project
                         image={Portfolio}
                         repo="https://github.com/tudorale/portfolio"
@@ -173,7 +173,7 @@ function Opensource() {
                     />
                 </div>
                 
-                <div data-aos="fade-down">
+                <div data-aos="fade-right">
                     <Project
                         image={Frozo}
                         repo="https://github.com/tudorale/frozo"
@@ -186,7 +186,7 @@ function Opensource() {
                     />
                 </div>
                 
-                <div data-aos="fade-right">
+                <div data-aos="fade-up">
                     <Project
                         image={DashBoard}
                         repo="https://github.com/tudorale/dashboard"

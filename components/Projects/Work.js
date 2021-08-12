@@ -14,7 +14,7 @@ function Work() {
     return (
         <div className={styles.work}>
 
-          <div className={styles.category} data-aos="fade-left">
+          <div className={styles.category} data-aos="fade-right">
             <div className={styles.info}>
               <h1>See my open source projects where you can contribute</h1>
               <Link href="/open-source" passHref>

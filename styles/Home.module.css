@@ -149,5 +149,10 @@
     .left .bigText{
         font-size: 2.5rem;
     }
+
+    .left .bigText img{
+        width: 26px;
+        height: 26px;
+    }
     
 }
