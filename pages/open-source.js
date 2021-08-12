@@ -24,7 +24,7 @@ function Opensource() {
 
     React.useEffect(() => {
         AOS.init({
-          duration: 600
+          duration: 500
         })
 
         gsap.set(wrapper.current, {css: { visibility: "visible" } });
@@ -34,15 +34,15 @@ function Opensource() {
         opacity: 0,
         y: -50,
         ease: Power3.easeOut,
-        delay: 0.8,
+        delay: 0.5,
         });
 
         gsap.from(subHeader.current,{
         duration: 0.6,
         opacity: 0,
-        y: 50,
+        y: -50,
         ease: Power3.easeOut,
-        delay: 1,
+        delay: 0.8,
         });
 
         gsap.from(scroll.current,{
@@ -50,7 +50,7 @@ function Opensource() {
         opacity: 0,
         y: 70,
         ease: Power3.easeOut,
-        delay: 1.2,
+        delay: 1,
         });
     }, [])
 
