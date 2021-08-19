@@ -11,8 +11,6 @@ function Footer() {
     const changeColor = (e) => {
         setColor(e.target.value);
 
-        localStorage.setItem('color', `${color}`);
-
         let root = document.querySelector(':root');
         root.style.setProperty('--main-color', `${color}`)
     }
