@@ -10,7 +10,7 @@ import About from '../components/About/About'
 import Hire from "../components/Hire/Hire";
 import Footer from '../components/Footer/Footer'
 import { Power3, gsap } from "gsap";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 
 export default function Home() {
 
