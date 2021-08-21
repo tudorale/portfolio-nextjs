@@ -38,7 +38,7 @@
 }
 
 .projectButtons a button:hover {
-    background-color: var(--main-hover);
+    filter: var(--main-hover);
 }
 
 .projectButtons a:nth-child(2) {

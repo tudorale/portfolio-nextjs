@@ -38,7 +38,7 @@
 }
 
 .projectButton a button:hover {
-    background-color: var(--main-hover);
+    filter: var(--main-hover);
 }
 
 .projectButton a button svg{

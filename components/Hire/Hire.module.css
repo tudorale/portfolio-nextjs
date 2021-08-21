@@ -83,7 +83,7 @@
 }
 
 .form button:hover{
-    background: var(--main-hover);
+    filter: var(--main-hover);
 }
 
 .form button svg{
