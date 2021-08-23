@@ -28,7 +28,9 @@
 .aboutBanner{
     width: 100%;
     height: auto;
+    position: relative;
     padding: 20px;
+    z-index: -3;
     margin-top: 15px;
     background: var(--main-color);
 }
@@ -45,6 +47,7 @@
     width: 100%;
     position: relative;
 }
+
 
 .about .aboutBanner .wrapper .additionalWrapper .number{
     position: absolute;

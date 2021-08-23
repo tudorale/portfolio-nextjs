@@ -19,6 +19,7 @@
     "react-scrollmagic": "^2.3.0",
     "react-typing-animation": "^1.6.2",
     "responsive-loader": "^2.3.0",
+    "smooth-scrollbar": "^8.6.3",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
