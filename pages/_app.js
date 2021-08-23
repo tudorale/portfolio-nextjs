@@ -1,16 +1,8 @@
 import '../styles/globals.css'
-// import "aos/dist/aos.css"
-import Scrollbar from "smooth-scrollbar";
+import "aos/dist/aos.css"
 import {useEffect} from "react";
 
 function MyApp({ Component, pageProps }){
-
-  useEffect(() => {
-    let elem = document.querySelector("body");
-
-    Scrollbar.init(elem);
-
-  }, [])
 
   return (
       <Component {...pageProps} />
