@@ -33,3 +33,26 @@ a {
   box-sizing: border-box;
 }
 
+
+#container{
+  width: 100%;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(177, 177, 177);
+  border-radius: 10px;
+  transition: all 300ms linear;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8146df;
+}
