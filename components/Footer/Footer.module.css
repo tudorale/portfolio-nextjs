@@ -67,19 +67,6 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 450px){
-    .footer{
-        bottom: -1030px;
-        height: 400px;
-    }
-
-    .links{
-        right: unset;
-        left: 20px;
-        top: 200px;
-    }
-}
-
 .changeColor{
     position: absolute;
     right: 0px;
@@ -127,12 +114,16 @@
     margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 760px){
     .darkMode{
         left: 20px;
         top: 135px;
         margin-right: unset;
     } 
+    .footer{
+        height: 280px;
+    }
+    
 
     .changeColor{
         position: absolute;
@@ -140,5 +131,26 @@
         top: 137px;
         margin-right:unset;
         margin-bottom: 5px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .resetColor svg{
+        left: 125px;
+        top: 130px;
+        margin-right:unset;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .footer{
+        bottom: -1030px;
+        height: 400px;
+    }
+
+    .links{
+        right: unset;
+        left: 20px;
+        top: 200px;
     }
 }
