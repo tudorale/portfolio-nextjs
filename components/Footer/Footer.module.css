@@ -112,7 +112,18 @@
     right: 0px;
     transition: all 300ms linear;
     bottom: 0;
-    margin-right: 75px;
+    margin-right: 80px;
+    margin-bottom: 5px;
+}
+
+.resetColor svg{
+    stroke: white;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    transition: all 300ms linear;
+    bottom: 0;
+    margin-right: 135px;
     margin-bottom: 5px;
 }
 
