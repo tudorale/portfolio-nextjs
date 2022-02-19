@@ -73,6 +73,7 @@ function Aibloc() {
         delay: 1.3,
       });
     }, [])
+    
     return (
         <>
             <Head>

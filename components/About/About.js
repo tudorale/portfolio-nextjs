@@ -19,7 +19,7 @@ function About() {
             <div className={styles.sectionOne} data-aos="fade-up">
                 
                 First of all, my name is Tudor Alexandru - Ionut and I am from România, my passion for Web Development started in July 2019. I started with HTML5 and I didn&apos;t know so much about this, but I chose the Front-End field because I want to show the world what I can do with a computer. 
-                And now I am doing freelancing and living a good life by connecting with people around the world.  
+                And now I am doing freelancing, playing with crypto and NFTs and living a good life by connecting with people around the world.  
                
                 <div className={styles.imageWrapper}>
                     <Image width="20" height="20" alt="world" src={World}/>
