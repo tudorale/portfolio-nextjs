@@ -7,4 +7,4 @@ export let configs = {
 
 const dev = process.env.NODE_ENV !== 'production';
 
-export const server = dev ? 'http://localhost:3000' : 'https://tudordev.vercel.app/';
+export const server = dev ? 'http://localhost:3000' : 'https://tudoralexandru.vercel.app';
