@@ -210,7 +210,7 @@ function Project({data}) {
 }
 
 export async function getStaticProps(content){
-  const res = await fetch(`${server}/api/${content.params.project}`);
+  const res = await fetch(`https://tudoralexandru.vercel.app/api/${content.params.project}`);
   const data = await res.json();
 
   return {
@@ -221,7 +221,7 @@ export async function getStaticProps(content){
 }
 
 export async function getStaticPaths(){
-  const res = await fetch(`${server}/api/paths`);
+  const res = await fetch(`https://tudoralexandru.vercel.app/api/paths`);
   const data = await res.json();
 
   return {
