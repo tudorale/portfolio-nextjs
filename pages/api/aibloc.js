@@ -1,7 +1,5 @@
 export default function handler(req, res) {
     res.status(200).json({ 
-        paths: ["test"],
-        aibloc: {
             title: "AiBloc",
             description: "Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.",
             images: {
@@ -43,6 +41,6 @@ export default function handler(req, res) {
                 "As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between 10-24 hours of coding, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.",
                 "The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below."
             ]
-        }
+        
      })
 }
