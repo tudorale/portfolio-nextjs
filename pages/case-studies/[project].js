@@ -210,19 +210,52 @@ function Project({data}) {
 }
 
 export async function getStaticProps(content){
-  const res = await fetch(`https://tudoralexandru.vercel.app/api/${content.params.project}`);
-  const data = await res.json();
+  let data = [];
+  try {
+    const res = await fetch(
+      `${server}/api/${content.params.project}`,
+      {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          'User-Agent': '*',
+        },
+      }
+    );
+
+    data = await res.json();
+  } catch (e) {
+    console.log(e)
+  }
 
   return {
     props: {
       data,
     },
-  }
+  };
 }
 
 export async function getStaticPaths(){
-  const res = await fetch(`https://tudoralexandru.vercel.app/api/paths`);
-  const data = await res.json();
+  
+  let data = [];
+  try {
+    const res = await fetch(
+      `${server}/api/paths`,
+      {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          'User-Agent': '*',
+        },
+      }
+    );
+
+    data = await res.json();
+  } catch (e) {
+    console.log(e)
+  }
 
   return {
     paths: data.paths.map((p) => {
@@ -230,6 +263,7 @@ export async function getStaticPaths(){
     }),
     fallback: false,
   }
+
 }
 
 export default Project;
