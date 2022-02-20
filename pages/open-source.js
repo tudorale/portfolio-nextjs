@@ -116,7 +116,7 @@ function Opensource() {
                         title="TypingHub"
                         description="TypingHub is a competitive platform for typists, where you can improve your typing speed by taking tests on different categories and gain points by taking tests to join into the top."
                         website="https://tudorale.github.io/typinghub"
-                        maintained="kinda"
+                        maintained="no"
                         application="yes"
                         react="yes"
                     />
@@ -129,7 +129,7 @@ function Opensource() {
                         title="Motes"
                         description="Motes is a place where you can keep all your notes in one place, the project started with the idea of a global Notes App as you have on your phone or computer, now you can keep all your notes here and you can access them on every device by going to your mote via a key."
                         website="https://tudorale.github.io/motes/#/"
-                        maintained="kinda"
+                        maintained="no"
                         application="yes"
                         react="yes"
                     />
