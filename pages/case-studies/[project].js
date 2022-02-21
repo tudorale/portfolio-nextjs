@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import React, {useRef} from "react"
 import {Power3, gsap} from "gsap";
 import AOS from "aos";
-import {server} from "../../config"
+import {paths, projects} from "../../data"
 
 function Project({data}) {
     React.useEffect(() => {
@@ -210,52 +210,16 @@ function Project({data}) {
 }
 
 export async function getStaticProps(content){
-  let data = [];
-  try {
-    const res = await fetch(
-      `${server}/api/${content.params.project}`,
-      {
-        method: "GET",
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          'User-Agent': '*',
-        },
-      }
-    );
-
-    data = await res.json();
-  } catch (e) {
-    console.log(e)
-  }
-
+  const data = projects.filter((prop) => prop.path == content.params.project);
   return {
     props: {
-      data,
+      data: data[0],
     },
-  };
+  }
 }
 
 export async function getStaticPaths(){
-  
-  let data = [];
-  try {
-    const res = await fetch(
-      `${server}/api/paths`,
-      {
-        method: "GET",
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          'User-Agent': '*',
-        },
-      }
-    );
-
-    data = await res.json();
-  } catch (e) {
-    console.log(e)
-  }
+  const data = paths;
 
   return {
     paths: data.paths.map((p) => {
@@ -263,7 +227,6 @@ export async function getStaticPaths(){
     }),
     fallback: false,
   }
-
 }
 
 export default Project;
