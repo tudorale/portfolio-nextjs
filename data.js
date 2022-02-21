@@ -9,7 +9,7 @@ export const projects = [
         description: "Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.",
         images: {
                 imageOne: {
-                    src: "/casestudies/aibloc/image3.png", 
+                    src: "/casestudies/aibloc/image1.png", 
                     desc: "Hero section, with an interactiv demo from the product."
                 },
                 imageTwo: {
