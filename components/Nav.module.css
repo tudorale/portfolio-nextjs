@@ -1,0 +1,33 @@
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.logo span {
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+}
+
+.links li{
+    margin: 0px 15px;
+    font-size: 0.95rem;
+    font-style: italic;
+    transition: all 200ms linear;
+}
+
+.links li:hover {
+    color: var(--main);
+}
