@@ -9,7 +9,9 @@ body {
 }
 
 :root {
-  --main: rgb(149, 35, 255);
+  --main: rgb(163, 64, 255);
+  --main-dark: rgb(137, 37, 231);
+  --gray: rgb(122, 122, 122);
 }
 
 a {

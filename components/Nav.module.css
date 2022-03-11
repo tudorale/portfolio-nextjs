@@ -21,13 +21,13 @@
     list-style: none;
 }
 
-.links li{
+.links a{
     margin: 0px 15px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-style: italic;
     transition: all 200ms linear;
 }
 
-.links li:hover {
+.links a:hover {
     color: var(--main);
 }

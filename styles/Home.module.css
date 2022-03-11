@@ -2,3 +2,181 @@
     max-width: 1114px;
     margin: 0 auto;
 }
+
+.hero {
+    position: relative;
+    top: 50px;
+}
+
+.left {
+    width: 500px;
+}
+
+.left h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.left button{
+    position: relative;
+    top: 5px;
+    padding: 7px 25px;
+    padding-right: 30px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--main-dark);
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.left button:hover{
+    background-color: var(--main);
+}
+
+.left button svg{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    left: -7px;
+    top: 2px;
+    fill: white;
+}
+
+.left button span{
+    position: relative;
+    left: 10px;
+    top: -6px;
+    font-size: 1.2rem;
+}
+
+.scroll {
+    display: block;
+    margin-top: 50px;
+}
+
+.circle {
+    animation: upDown 800ms infinite alternate-reverse;
+}
+
+@keyframes upDown {
+    0% {
+      -webkit-transform: translate(262px, 798px);
+      transform: translate(262px, 798px);
+    }
+    100% {
+      -webkit-transform: translate(262px, 830px);
+      transform: translate(262px, 830px);
+    }
+}
+
+
+.work{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    width: 100%;
+    grid-row-gap: 100px;
+}
+
+.grid{
+    display: grid;
+    position: relative;
+    top: 20px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+}
+
+
+.grid .info h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.grid .info h1::after {
+    content: "";
+    width: 217px;
+    height: 15px;
+    background: var(--main-dark);
+    position: absolute;
+    margin-left: -218px;
+    margin-top: 27px;
+    z-index: -1;
+}
+
+.gridTwo .info h1::after {
+    width: 134px;
+    margin-left: -134px;
+}
+
+
+.grid .image {
+    width: 550px;
+    height: 290px;
+    border-radius: 10px;
+    margin-top: 30px;
+    animation: upDownSlow 1000ms infinite alternate-reverse;
+}
+
+@keyframes upDownSlow {
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.grid .info button{
+    position: relative;
+    top: 5px;
+    padding: 5px 20px;
+    padding-right: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-dark);
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.grid .info button:hover{
+    background-color: var(--main);
+}
+
+.grid .info button svg{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    left: -5px;
+    top: 2px;
+    fill: white;
+}
+
+.grid .info button span{
+    position: relative;
+    left: 12px;
+    top: -6px;
+    font-size: 1.2rem;
+}
+
+.grid .info p{
+    position: relative;
+    top: 25px;
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+.grid .info a{
+    color: var(--main);
+    text-decoration: underline;
+}
