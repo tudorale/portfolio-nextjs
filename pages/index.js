@@ -81,6 +81,8 @@ export default function Home() {
           <Link href="/open-source" passHref><img className={styles.image} src="/opensource/typinghub.jpg"/></Link>
         </div>
 
+        <div className={styles.line}></div>
+
         <div className={styles.grid + " " + styles.gridTwo}>
           <div className={styles.info}>
             <h1>See my case studies about my work for different clients</h1>  
@@ -95,7 +97,43 @@ export default function Home() {
           </div>  
           <Link href="/case-studies/aibloc" passHref><img className={styles.image} src="/casestudies/aibloc.jpg"/></Link>
         </div>
+
+        <div className={styles.bigLine}></div>
+
       </div>
+
+      <div className={styles.skills}>
+        <div>
+          <p className={styles.title}>Front-End Development</p>
+          <p className={styles.info}>In the Front-End Development field I have 3 years of experience in the modern technologies that a developer is using, like React JS, Next JS, React-Redux, TypeScript, JavaScript, Git, SCSS, and more.
+            <br/>
+            P.S: I am still learning new stuff.</p>
+        </div>
+        <div>
+          <p className={styles.title}>UI/UX Design</p>
+          <p className={styles.info}>I love to design and edit things, from editing photos to websites and more. I am using Adobe Photoshop from 2018 and for website design I am using Figma, every open source project and some other projects for clients are designed by me :)</p>
+        </div>
+        <div className={styles.bigLine} style={{marginTop: "70px"}}></div>
+      </div>
+
+      <div className={styles.about}>
+        <p className={styles.intro}>Hi, isn't it awesome how someone like you, probably farrrrr awayyyy from me, can read this?</p>
+      
+        <div className={styles.text}>
+                
+          First of all, my name is Tudor Alexandru - Ionut and I am from România, my passion for Web Development started in July 2019. I started with HTML5 and I didn&apos;t know so much about this, but I chose the Front-End field because I want to show the world what I can do with a computer. 
+          And now I am doing freelancing, playing with crypto and NFTs and living a good life by connecting with people around the world.  
+               
+          <div className={styles.imageWrapper}>
+            <img width="20" height="20" alt="world" src="/world.png" />
+          </div>    
+        </div>
+
+        <p className={styles.text}>After a few months I knew that I am good at what I'm doing, actually, from the first page that I made at that time I knew that I can do much better. I wasn't like others at start, put some text and add a color and that's it, even though I didn't had the knowledge at that time to make something bigger, like animations or working with libraries, and I don't like to lie myself about my work, I want to make the things perfectly with a very special eye for details.</p>
+      </div>
+
+      <div className={styles.bigLine} style={{marginTop: "70px"}}></div>
+
     
     </div>
   )
