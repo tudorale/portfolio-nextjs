@@ -12,6 +12,8 @@ body {
   --main: rgb(163, 64, 255);
   --main-dark: rgb(137, 37, 231);
   --gray: rgb(122, 122, 122);
+  --secondary-color: #2d8acc;
+  --secondary-hover: #48a0df;
 }
 
 a {
