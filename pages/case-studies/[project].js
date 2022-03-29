@@ -92,6 +92,18 @@ function Project({data}) {
                                 </button> 
                             </a>
                         </Link>
+                        {
+                          data.links.website ?
+                            <Link href={`${data.links.websiteLink}`} passHref>
+                              <a target="_blank" rel="noreferrer">
+                                  <button className={styles.websiteButton}>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 12c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-.199.02-.393.057-.581 1.474.541 2.927-.882 2.405-2.371.174-.03.354-.048.538-.048 1.657 0 3 1.344 3 3zm-2.985-7c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 12c-2.761 0-5-2.238-5-5 0-2.761 2.239-5 5-5 2.762 0 5 2.239 5 5 0 2.762-2.238 5-5 5z"/></svg>
+                                      <span>Website (Preview)</span>  
+                                  </button> 
+                              </a>
+                            </Link>
+                            : null
+                        }
                     </div>
                     <svg
                         className={styles.scroll}
@@ -132,7 +144,7 @@ function Project({data}) {
                </div>
 
                <div className={styles.image} ref={image}>
-                    <Image alt="ai bloc landing page" loading="eager" width="650" height="310" src={`${data.images.imageOne.src}`}/>
+                    <img alt="landing page" quality="100" loading="eager" width="570" height="290" src={`${data.images.imageOne.src}`}/>
                </div>
            </div>
 
@@ -148,7 +160,7 @@ function Project({data}) {
            <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage} data-aos="fade-right">
-                        <Image alt="ai bloc landing page" loading="eager" width="750" height="362" src={data.images.imageOne.src}/>
+                        <img alt="landing page" loading="eager" width="550" height="270" src={data.images.imageOne.src}/>
                     </div>
                     <div className={styles.bannerInfo} data-aos="fade-up">
                         <h1>{data.images.imageOne.desc}</h1>
@@ -168,7 +180,7 @@ function Project({data}) {
            <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage} data-aos="fade-right">
-                        <Image alt="ai bloc landing page" loading="eager" width="750" height="362" src={data.images.imageTwo.src}/>
+                        <img alt="landing page" loading="eager" width="550" height="270" src={data.images.imageTwo.src}/>
                     </div>
                     <div className={styles.bannerInfo} data-aos="fade-up">
                         <h1>{data.images.imageTwo.desc}</h1>
@@ -186,16 +198,16 @@ function Project({data}) {
             <div className={styles.banner}>
                <div className={styles.bannerContent}>
                     <div className={styles.bannerImage} data-aos="fade-down">
-                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={data.images.imageThree.src}/>
+                        <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageThree.src}/>
                     </div>
                     <div className={styles.bannerImage} data-aos="fade-up">
-                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={data.images.imageFour.src}/>
+                        <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageFour.src}/>
                     </div>
                     <div className={styles.bannerImage} data-aos="fade-up">
-                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={data.images.imageFive.src}/>
+                        <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageFive.src}/>
                     </div>
                     <div className={styles.bannerImage} data-aos="fade-down">
-                        <Image alt="ai bloc landing page" width="750" loading="eager" height="362" src={data.images.imageSix.src}/>
+                        <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageSix.src}/>
                     </div>
                </div>
            </div>
