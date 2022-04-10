@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import React from "react"
 import {Power3, gsap} from "gsap";
 import AOS from "aos";
+import { projects} from "../../data"
 
 function Casestudies() {
 
@@ -101,15 +102,19 @@ function Casestudies() {
                 </div>
 
                 <div className={styles.caseStudiesContent}>
-                    <div data-aos="fade-up">
-                        <Study
-                            image={AiBloc}
-                            link="/case-studies/aibloc"
-                            repo="https://github.com/tudorale/aibloc"
-                            title="Ai Bloc"
-                            description='Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.'
-                        />
-                    </div>
+                    {
+                        projects.map((project, index) => {
+                            <div data-aos="fade-up" id={index}>
+                                <Study
+                                    image={project.images.heroImage.src}
+                                    link={"/case-studies/" + `${project.path}`}
+                                    repo={project.links.github}
+                                    title={project.title}
+                                    description={project.description}
+                                />
+                            </div>
+                        })
+                    }
                 </div>
             </div>
             
