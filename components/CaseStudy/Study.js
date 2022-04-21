@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link";
 import styles from "./Study.module.css";
 
@@ -36,7 +35,7 @@ function Project({title, description, link, image, repo}) {
 
       <div className={styles.partTwo}>
         <Link href={link} passHref>
-            <Image src={image} alt="" loading="eager" className={styles.projectImage} />
+            <img src={image} alt="" loading="eager" className={styles.projectImage} />
         </Link>
       </div>
     </div>

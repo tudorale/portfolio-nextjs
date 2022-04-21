@@ -103,17 +103,17 @@ function Casestudies() {
 
                 <div className={styles.caseStudiesContent}>
                     {
-                        projects.map((project, index) => {
+                        projects.map((project, index) => 
                             <div data-aos="fade-up" id={index}>
                                 <Study
-                                    image={project.images.heroImage.src}
+                                    image={project.title == "AiBloc" ? "/casestudies/aibloc.jpg" : project.images.heroImage.src}
                                     link={"/case-studies/" + `${project.path}`}
                                     repo={project.links.github}
                                     title={project.title}
                                     description={project.description}
                                 />
                             </div>
-                        })
+                        )
                     }
                 </div>
             </div>

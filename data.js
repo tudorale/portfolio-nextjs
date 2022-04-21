@@ -55,7 +55,7 @@ export const projects = [
     {
         path: "onlyfrens",
         title: "OnlyFrens",
-        description: "OnlyFrens is a NFT collection, my role was to turn a Figma Design into this beautiful landing page for this beautiful idea.",
+        description: "OnlyFrens is an idea of a NFT collection, my role was to turn a Figma Design of this idea into a landing page with 3 different pages using Next JS.",
         images: {
                 heroImage: {
                     src: "/casestudies/onlyfrens/o1.jpg"
@@ -91,18 +91,18 @@ export const projects = [
                 "A NFT project for a client that I worked on many projects, this was my first website for him, a straightforward project, I got a Figma Design of this website and I turned it into a beautiful Next JS website with 3 separate pages, fully responsive on every device and with some interesting animations that you will find on the website.",
         ],
         role: [
-              "The recruiter was looking for a Front-End Developer with experience in Next JS for a NFT website, my role was to turn an already made design into a website made with Next JS, nothing complicated.",
+              "Nothing complicated, a one time job, the recruiter was looking for a Front-End Developer with experience in Next JS for a NFT website, my role was to turn an already made design into a website made with Next JS.",
         ],
         walkthrough: [
             "As the design was pretty simple I started easily, the design contained 3 pages, the Landing Page, Roadmap and FAQs, desktop first then made responsive using only CSS media queris as the structure of the design wasn't complicated.",
-            "The project took around 14 hours of coding using Next JS with static CSS and a carousel using the library Slick Carousel.",
+            "The project took around 14 billed hours of coding using Next JS with static CSS and a carousel using the library Slick Carousel.",
             "The website turned out pretty good, simple design but at the same time an interesting one, good for a NFT project, all the three pages are responsive and in the end the client was happy with the website. I do not own information about the future of the project, the website is hosted free for preview."
         ]
     },
     {
         path: "mememarketplace",
         title: "Meme Marketplace",
-        description: "OnlyFrens is a NFT collection, my role was to turn a Figma Design into this beautiful landing page for this beautiful idea.",
+        description: "MemeMarketplace is another project in NFT and Crypto industry, it has a beautiful and interesting design that I had to give life with Next JS. ",
         images: {
                 heroImage: {
                     src: "/casestudies/meme/m1.png"
@@ -132,17 +132,15 @@ export const projects = [
                 websiteLink: "https://www.mememarket.place/",
         },
         summery: [
-                "Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.",
-                "At first, I started designing a wireframe in Figma, the client was happy about it and then we went to the coding process. I used mainly React JS as the client was fine with it, I used also different libraries such as GSAP, AOS, Typed.js for animations. The illustrations from the landing page were edited in Adobe Photoshop to match the color scheme."
+                "This project actually is for a previous client that I worked for, this websited was coded during November 2021, the instructions were simple, I got a Figma Design from the recruiter that I had to code using Next JS for a better SEO, small changes were made after the website was finished, for example changing texts, removing sections.",
         ],
         role: [
-              "As the recruiter for this one time project wanted a Front-End Developer, with experience in React JS, I handled the coding of the landing page but also the design of it.",
-              "For the coding process I used React JS with the following libraries: GSAP, AOS, React Slick and Typed JS. To design the wireframe and a mockup for the landing page I used Figma."
+              "My role as a Front-End Developer was to turn a Figma Design into one fully responsive page and also handling the hosting and domain assignment for this page.",
         ],
         walkthrough: [
-                "The project started with a wireframe made in Figma, after the client review it, I started adding more features, illustrations and icons to make the design look better. After the mock up for the landing page was done I started the coding process.",
-                "As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between 10-24 hours of coding, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.",
-                "The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below."
+                "The whole coding, website & mobile, and hosting process of the website took around 10.5 billed hours. The project was simple, I delivered the website with hosting and ended this one time job, the landing page was coded in Next JS for better SEO, I chose plain CSS because is just one page and a library will slow down the website.",
+                "After the website was done and the recruiter approved it I had to host the website with the AWS services and assign a third party domain from NameCheap.",
+                "This website design is acutally one of my favorite, it has this chinese theme that will not see often. My job was just to code the website and then host it with the recruiter's domain, at the moment I do not own informations about the future of this project, the preview is redirecting to the actual domain of the website, in the future the website might not work, this depends on the owner of it."
         ]
     },
     {
@@ -202,7 +200,7 @@ export const projects = [
     },
     {
         path: "degendevil",
-        title: "Skullbots Biker Gang Game",
+        title: "DegenDevil",
         description: "OnlyFrens is a NFT collection, my role was to turn a Figma Design into this beautiful landing page for this beautiful idea.",
         images: {
                 heroImage: {
