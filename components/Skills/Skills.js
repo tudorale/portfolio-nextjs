@@ -16,7 +16,7 @@ function Skills() {
                 <div className={styles.additionalWrapper} data-aos="fade-up">
                     <div className={styles.sectionOne}>
                         <h1>Front-End Development</h1>
-                        <p>In the Front-End Development field I have 3 years of experience in the modern technologies that a developer is using, like React JS, Next JS, React-Redux, TypeScript, JavaScript, Git, SCSS, and more. <br/>P.S: I am still learning new stuff.</p>
+                        <p>It has been more than 3 years since I started coding my first page, in this time I learned technologies such as React JS, Next JS, React-Redux, TypeScript, JavaScript, Git, SCSS, and more. <br/>P.S: I am still learning new stuff.</p>
                     </div>
 
                     <div className={styles.sectionTwo}>
