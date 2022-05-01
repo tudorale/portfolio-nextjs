@@ -1,5 +1,5 @@
 export const paths = {
-    paths: ["aibloc", "onlyfrens", "mememarketplace", "skullbots", "degendevil"]
+    paths: ["aibloc", "onlyfrens", "mememarketplace", "skullbots"]
 }
 
 export const projects = [
@@ -132,7 +132,7 @@ export const projects = [
                 websiteLink: "https://www.mememarket.place/",
         },
         summery: [
-                "This project actually is for a previous client that I worked for, this websited was coded during November 2021, the instructions were simple, I got a Figma Design from the recruiter that I had to code using Next JS for a better SEO, small changes were made after the website was finished, for example changing texts, removing sections.",
+                "This project actually is for a previous client that I worked for, this website was coded during November 2021, the instructions were simple, I got a Figma Design from the recruiter that I had to code using Next JS for a better SEO, small changes were made after the website was finished, for example changing texts, removing sections.",
         ],
         role: [
               "My role as a Front-End Developer was to turn a Figma Design into one fully responsive page and also handling the hosting and domain assignment for this page.",
@@ -146,7 +146,7 @@ export const projects = [
     {
         path: "skullbots",
         title: "Skullbots Biker Gang",
-        description: "OnlyFrens is a NFT collection, my role was to turn a Figma Design into this beautiful landing page for this beautiful idea.",
+        description: "Skullbots is an NFT project for a previous client that I worked for, my job was to turn a Figma design into a responsive landing page plus one page, then host the website with AWS Amplify.",
         images: {
                 heroImage: {
                     src: "/casestudies/skullbots/s1.png"
@@ -185,66 +185,65 @@ export const projects = [
                 websiteLink: "https://skullbots.io"
         },
         summery: [
-                "Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.",
-                "At first, I started designing a wireframe in Figma, the client was happy about it and then we went to the coding process. I used mainly React JS as the client was fine with it, I used also different libraries such as GSAP, AOS, Typed.js for animations. The illustrations from the landing page were edited in Adobe Photoshop to match the color scheme."
+                "SküllBöt Bikers Sent back in Time to the Solana Blockchain Only the HellSpawn can call Hell home, a NFT project that is quite successful in this industry, the client gave me the first part from the design at the start of 2022. The website was started late January 2022 with the Hellswap page, after that in late March 2022 the design for the landing page was done and I had to code using Next JS.",
         ],
         role: [
-              "As the recruiter for this one time project wanted a Front-End Developer, with experience in React JS, I handled the coding of the landing page but also the design of it.",
-              "For the coding process I used React JS with the following libraries: GSAP, AOS, React Slick and Typed JS. To design the wireframe and a mockup for the landing page I used Figma."
+              "I worked on previous websites with this client and again my role as a Front-End Developer was to code the front-end of his design but also managing the hosting and domain of the final website.",
         ],
         walkthrough: [
-                "The project started with a wireframe made in Figma, after the client review it, I started adding more features, illustrations and icons to make the design look better. After the mock up for the landing page was done I started the coding process.",
-                "As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between 10-24 hours of coding, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.",
-                "The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below."
+                "Straightforward I got the design and started working, the design of the page is pretty interesting, with GIFs as background and a 'scary' design scheme.",
+                "The page was made in Next JS and styled with plain CSS3, I worked on 2 different pages, the first page that you will find on the domain is the landing page and then we have 'Hellswap' which is a trading page for NFTs, my job was just to code the design, the functionality does not exist at the moment of writing.",
+                "This project took around 20 hours of coding plus hosting with AWS Amplify. In the end, the project turned awesome, with a modern website for an NFT project that I am also part of, the client was happy with the design and the project is now a successful NFT project on Solana Blockchain.",
+                "The client has access to the hosting of the website, in the future the preview for this website may not work, check the GitHub repository for additional previews."
         ]
     },
-    {
-        path: "degendevil",
-        title: "DegenDevil",
-        description: "OnlyFrens is a NFT collection, my role was to turn a Figma Design into this beautiful landing page for this beautiful idea.",
-        images: {
-                heroImage: {
-                    src: "/casestudies/degendevil/d0.png"
-                },
-                imageOne: {
-                    src: "/casestudies/degendevil/d1.png", 
-                    desc: "Connect Wallet Page"
-                },
-                imageTwo: {
-                    src: "/casestudies/degendevil/d2.png",
-                    desc: "Activate Serum Page"
-                },
-                imageThree: {
-                    src: "/casestudies/degendevil/d3.png",
-                },
-                imageFour: {
-                    src: "/casestudies/degendevil/d4.png",
-                },
-                imageFive: {
-                    src: "/casestudies/degendevil/d5.png",
-                },
-                imageSix: {
-                    src: "/casestudies/degendevil/d6.png",
-                },
-        },
-        links: {
-                github: "https://github.com/tudorale/hellswap",
-                website: true,
-                type: "live",
-                websiteLink: "https://skullbots.io"
-        },
-        summery: [
-                "Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.",
-                "At first, I started designing a wireframe in Figma, the client was happy about it and then we went to the coding process. I used mainly React JS as the client was fine with it, I used also different libraries such as GSAP, AOS, Typed.js for animations. The illustrations from the landing page were edited in Adobe Photoshop to match the color scheme."
-        ],
-        role: [
-              "As the recruiter for this one time project wanted a Front-End Developer, with experience in React JS, I handled the coding of the landing page but also the design of it.",
-              "For the coding process I used React JS with the following libraries: GSAP, AOS, React Slick and Typed JS. To design the wireframe and a mockup for the landing page I used Figma."
-        ],
-        walkthrough: [
-                "The project started with a wireframe made in Figma, after the client review it, I started adding more features, illustrations and icons to make the design look better. After the mock up for the landing page was done I started the coding process.",
-                "As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between 10-24 hours of coding, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.",
-                "The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below."
-        ]
-    },
+    // {
+    //     path: "degendevil",
+    //     title: "DegenDevil",
+    //     description: "OnlyFrens is a NFT collection, my role was to turn a Figma Design into this beautiful landing page for this beautiful idea.",
+    //     images: {
+    //             heroImage: {
+    //                 src: "/casestudies/degendevil/d0.png"
+    //             },
+    //             imageOne: {
+    //                 src: "/casestudies/degendevil/d1.png", 
+    //                 desc: "Connect Wallet Page"
+    //             },
+    //             imageTwo: {
+    //                 src: "/casestudies/degendevil/d2.png",
+    //                 desc: "Activate Serum Page"
+    //             },
+    //             imageThree: {
+    //                 src: "/casestudies/degendevil/d3.png",
+    //             },
+    //             imageFour: {
+    //                 src: "/casestudies/degendevil/d4.png",
+    //             },
+    //             imageFive: {
+    //                 src: "/casestudies/degendevil/d5.png",
+    //             },
+    //             imageSix: {
+    //                 src: "/casestudies/degendevil/d6.png",
+    //             },
+    //     },
+    //     links: {
+    //             github: "https://github.com/tudorale/hellswap",
+    //             website: true,
+    //             type: "live",
+    //             websiteLink: "https://skullbots.io"
+    //     },
+    //     summery: [
+    //             "Ai Bloc is a non-code platform where you can build Data Science and Machine Learning programs, the client wanted a good and beautiful landing page for this start-up.",
+    //             "At first, I started designing a wireframe in Figma, the client was happy about it and then we went to the coding process. I used mainly React JS as the client was fine with it, I used also different libraries such as GSAP, AOS, Typed.js for animations. The illustrations from the landing page were edited in Adobe Photoshop to match the color scheme."
+    //     ],
+    //     role: [
+    //           "As the recruiter for this one time project wanted a Front-End Developer, with experience in React JS, I handled the coding of the landing page but also the design of it.",
+    //           "For the coding process I used React JS with the following libraries: GSAP, AOS, React Slick and Typed JS. To design the wireframe and a mockup for the landing page I used Figma."
+    //     ],
+    //     walkthrough: [
+    //             "The project started with a wireframe made in Figma, after the client review it, I started adding more features, illustrations and icons to make the design look better. After the mock up for the landing page was done I started the coding process.",
+    //             "As I said I made this project in React JS as the client had his platform also on React JS, this will help the client to implement the landing page to his main project, the coding process took between 10-24 hours of coding, the first day I added the content for the website, the second day we found illustrations and made carousel for the videos that were provided by the client, and in the final day I made the website fully responsive.",
+    //             "The landing page turned out as a beautiful responsive website with animations and a great user experience as you can see in the images below."
+    //     ]
+    // },
 ]
