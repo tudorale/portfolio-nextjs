@@ -94,9 +94,9 @@
     }
 }
 
-@media only screen and (max-width: 400px){
-    .partTwo{
-        display: none;
+@media only screen and (max-width: 580px){
+    .partTwo img{
+        width: 100%;
     }
 }
 
@@ -110,5 +110,8 @@
         margin-top: 15px;
     }
     
+    .partTwo{
+        display: none;
+    }
     
 }

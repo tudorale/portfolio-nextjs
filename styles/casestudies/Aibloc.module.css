@@ -169,6 +169,47 @@
     width: 450px;
 }
 
+
+@media only screen and (max-width: 1275px){
+    
+    .image img{
+        width: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 1125px){
+    
+    .image{
+        display: none;
+    }
+
+    
+    .bannerInfo{
+        display: none;
+    }
+
+    .bannerContent{
+        width: auto;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studyContent{
+        width: auto;
+        padding: 0 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 580px){
+    .bannerImage img{
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
 @media only screen and (max-width: 600px){
     .hero .info p{
         width: auto;
@@ -206,44 +247,18 @@
 }
 
 @media only screen and (max-width: 400px){
-    .banner{
-        display: none;
-    }
     .studyFooter{
         position: relative;
         top: -450px;
     } 
-}
 
-@media only screen and (max-width: 1275px){
-    
-    .image img{
-        width: 500px;
-    }
-
-}
-
-@media only screen and (max-width: 1125px){
-    
-    .image{
-        display: none;
-    }
-
-    
-    .bannerInfo{
-        display: none;
+    .banner{
+        padding: 20px 10px;
     }
 
     .bannerContent{
-        width: auto;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .studyContent{
-        width: auto;
-        padding: 0 20px;
+        grid-gap: 20px;
     }
     
 }
+
