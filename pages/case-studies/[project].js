@@ -156,16 +156,20 @@ function Project({data}) {
                }
            </div>
 
-           <div className={styles.banner}>
-               <div className={styles.bannerContent}>
-                    <div className={styles.bannerImage} data-aos="fade-right">
-                        <img alt="landing page" loading="eager" width="550" height="270" src={data.images.imageOne.src}/>
-                    </div>
-                    <div className={styles.bannerInfo} data-aos="fade-up">
-                        <h1>{data.images.imageOne.desc}</h1>
-                    </div>
-               </div>
-           </div>
+           {
+           data.images.imageOne ? 
+            <div className={styles.banner}>
+              <div className={styles.bannerContent}>
+                  <div className={styles.bannerImage} data-aos="fade-right">
+                      <img alt="landing page" loading="eager" width="550" height="270" src={data.images.imageOne.src}/>
+                  </div>
+                  <div className={styles.bannerInfo} data-aos="fade-up">
+                      <h1>{data.images.imageOne.desc}</h1>
+                  </div>
+              </div>
+            </div>
+            : "" 
+          }
 
            <div className={styles.studyContent} style={{marginTop: "100px"}}>
                <h1 data-aos="fade-right"><span>{"//"}</span> MY ROLE</h1>
@@ -176,16 +180,21 @@ function Project({data}) {
                }
            </div>
 
-           <div className={styles.banner}>
-               <div className={styles.bannerContent}>
-                    <div className={styles.bannerImage} data-aos="fade-right">
+
+            {
+              data.images.imageTwo ? 
+                <div className={styles.banner}>
+                  <div className={styles.bannerContent}>
+                        <div className={styles.bannerImage} data-aos="fade-right">
                         <img alt="landing page" loading="eager" width="550" height="270" src={data.images.imageTwo.src}/>
                     </div>
                     <div className={styles.bannerInfo} data-aos="fade-up">
                         <h1>{data.images.imageTwo.desc}</h1>
                     </div>
-               </div>
-           </div>
+                  </div>
+                </div>
+              : ""
+            }
 
            <div className={styles.studyContent} style={{marginTop: "100px"}}>
                <h1 data-aos="fade-right"><span>{"//"}</span> WALKTHROUGH</h1>
@@ -194,20 +203,34 @@ function Project({data}) {
               ))}
            </div>
 
+           {
+            data.images.imageThree ? 
+            
             <div className={styles.banner}>
-               <div className={styles.bannerContent}>
-                 {
+              
 
-                 }
-                    <div className={styles.bannerImage} data-aos="fade-down">
+               <div className={styles.bannerContent}>
+                    {
+                      data.images.imageThree ? 
+                      <div className={styles.bannerImage} data-aos="fade-down">
                         <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageThree.src}/>
-                    </div>
-                    <div className={styles.bannerImage} data-aos="fade-up">
+                      </div>
+                    : null
+                    }
+                    {
+                      data.images.imageFour ? 
+                      <div className={styles.bannerImage} data-aos="fade-down">
                         <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageFour.src}/>
-                    </div>
-                    <div className={styles.bannerImage} data-aos="fade-up">
+                      </div>
+                    : null
+                    }
+                    {
+                      data.images.imageFive ? 
+                      <div className={styles.bannerImage} data-aos="fade-down">
                         <img alt="landing page" width="500" loading="eager" height="250" src={data.images.imageFive.src}/>
-                    </div>
+                      </div>
+                    : null
+                    }
                     {
                       data.images.imageSix ? 
                       <div className={styles.bannerImage} data-aos="fade-down">
@@ -230,7 +253,12 @@ function Project({data}) {
                     : null
                     }
                </div>
-           </div>
+  
+            </div>
+
+            : ""
+
+          }
 
 
             <div className={styles.studyFooter}>

@@ -79,7 +79,7 @@ function Footer() {
                 <div className={styles.imageWrapper}>
                     <Image width="25" height="25" alt="copyright" src={Copyright}/>
                 </div>
-                2021 Copyright Tudor Alexandru, Made with love in România {"<"}3
+                Since 2021 Copyright Tudor Alexandru, Made with love in România {"<"}3
             </div>
         
 
