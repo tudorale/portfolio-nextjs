@@ -70,7 +70,7 @@
     padding-right: 30px;
     border: none;
     outline: none;
-    background-color: #48a0df;
+    background-color: var(--main-color);
     color: white;
     font-size: 1.1rem;
     display: flex;
